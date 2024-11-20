@@ -15,7 +15,7 @@ public:
 private:
     void publish_message() {
         auto message = std_msgs::msg::String();
-        message.data = "Hello, ROS 2!";
+        message.data = "Hello, ROS 2 i am oro";
         RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
         publisher_->publish(message);
     }
